@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="space-y-6 w-[500px] mx-auto mt-12">
-    <section >
-        <p>
-            <h2 class="text-3xl font-bold">Question 1 => </h2>
-            <span class="text-xl font-bold">var : </span> var has function or global scope, can be hoisted, and is reassignable. <br>
-    <span class="text-xl font-bold">let : </span> let  has block scope, cannot be hoisted, and is reassignable. <br>
-    <span class="text-xl font-bold">const : </span>const has block scope, cannot be hoisted, and holds a constant value after assignment.
-        </p>
-    </section>
 
-    <section>
-        <h2 class="text-xl font-bold"> Question 2 :</h2>
-        <p>
-            <span class="font-bold">undefined</span>  is the default value for uninitialized variables or the absence of a value, while <span class="font-bold">null</span> is an explicit value indicating intentional absence of any object value.
-        </p>
-    </section>
+<body>
+    <header class="mt-12">
+        <h2 class="text-3xl font-bold text-center font-serif">Explore let,var,const and null vs undefined and REST api
+        </h2>
+    </header>
+    <main class="space-y-6 w-full lg:w-[500px] mx-auto mt-12 p-10 lg:p-0">
+        <section class="bg-gray-300 rounded-lg shadow-xl p-6">
 
-    <section>
-        <p>
-           <span class="font-bold"> REST API</span> is a way for different software systems to communicate over the internet using standard rules and URLs to access and manipulate data. It follows a set of principles, like using HTTP methods for actions and representing resources, making it widely used for building web services and applications.
-        </p>
-    </section>
+            <h2 class="text-xl font-bold mb-3"> Question 1 :</h2>
+            <hr>
+            <ol>
+                <p><span class=" font-bold">var : </span> The var keyword in JavaScript is used to declare variables.
+                    Variables
+                    declared with var have function-level scope, which means they are accessible throughout the function
+                    in which
+                    they are declared, or globally if declared outside of any function.</p> <br>
+
+                <p><span class=" font-bold">let : </span> In JavaScript, the let keyword is used to declare variables
+                    with block
+                    scope. Variables declared with let are limited in scope to the block, statement, or expression in
+                    which they are
+                    defined. This means that they are only accessible within the block they are declared in, and they
+                    don't hoist to
+                    the top of their containing function or global scope like variables declared with var do.</p> <br>
+                <p><span class=" font-bold">const : </span>In JavaScript, the const keyword is used to declare
+                    variables, but
+                    unlike let, variables declared with const are constant. This means their values cannot be reassigned
+                    once they
+                    are initialized. Additionally, const variables also have block scope, just like let</p>
+            </ol>
+
+        </section>
+
+        <section class="bg-gray-300 rounded-lg shadow-xl p-6">
+            <h2 class="text-xl font-bold"> Question 2 :</h2>
+            <hr>
+            <p>
+                <span class="font-bold">undefined</span> An "undefined" value in JavaScript typically means that a
+                variable has been declared but hasn't been assigned a value, or a function returns nothing explicitly.
+            </p>
+            <p>
+                <span class="font-bold">null</span> A "null" value, on the other hand, is a deliberate value that
+                indicates the absence of an object or the intention to have no value. It's often used when you want to
+                clear or reset a variable.
+            </p>
+        </section>
+
+        <section class="bg-gray-300 rounded-lg shadow-xl p-6 mb-9">
+            <h2 class="text-xl font-bold"> Question 3 :</h2>
+            <hr>
+            <p>
+                <span class="font-bold"> REST API</span> A REST API is a standardized way for computer systems to
+                communicate over the internet. It uses HTTP methods like GET, POST, PUT, and DELETE to perform actions
+                on resources (data or services). REST APIs are stateless, have a uniform interface, and are widely used
+                for web and mobile app development.
+            </p>
+        </section>
+    </main>
 </body>
+
 </html>
