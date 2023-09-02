@@ -63,7 +63,7 @@ cardContainer.textContent = ""
         const timeInMin  = Math.floor(timeInHours%60)
         const div = document.createElement('div')  
         div.innerHTML = `
-        <div class="card  bg-base-100 shadow-xl">
+        <div class="card h-[380px] bg-base-100 shadow-xl">
         <div>  
         <span class = 'relative'><img class='h-[200px] w-full' src="${item.thumbnail}" alt="" /></span>
         <p class = 'absolute bg-gray-100 px-4 top-40 left-28 rounded-lg'>
@@ -74,11 +74,11 @@ cardContainer.textContent = ""
         }  
         </p>
         </div>
-        
+
         <div class="card-body ">
         <div class = "flex justify-left gap-2">
-        <div class = "w-12 ">
-        <img class = "rounded-full " src="${item.authors[0].profile_picture}" alt="" />
+        <div class = "w-[50px]">
+        <img class = " rounded-full " src="${item.authors[0].profile_picture}" alt="" />
         </div>
         <h2 class="text-xl font-bold">${item.title}
         </h2>
